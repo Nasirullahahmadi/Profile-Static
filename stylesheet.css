@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: #1e90ff;
+    font-family: cursive;
+    text-space: 1px;
+}
+
+.statsContainer {
+    margin: 20px;
+    border: dotted  lightskyblue;
+    min-width: 200px;
+    height: 100px;
+    position: relative;
+    padding: 20px;
+}
+
+.statsContainer h4 {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.icon {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.counter {
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+    }
+}
